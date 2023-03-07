@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    scroll-margin-top:60px;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    transition: 0.3s;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+.text h1{
+    margin-bottom: 5px;
+    text-shadow: 3px 3px 5px #000;
+    color: #ddd;
+}
+.section-title{
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about-us-info{
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: gray;  
+    text-align: center;
+    z-index: 10;
+}
+.burger-icon{
+    display: block;
+    margin-left: auto;
+    padding:0 30px;
+    background:none;
+    line-height: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+.nav-items{
+    display: none;
+}
+/* header */
+.header{
+    position: relative;
+    height: 330px;
+    background-image: url(./Img/snowy-peaks-g2b4623f6d_640.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* main */
+
+main{
+    margin: 60px 0px;
+}
+/* products */
+.products{
+   
+    margin: 60px auto;
+   
+}
+.product{ 
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.product:hover .bg {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.first-product{  
+    background-image: url(./Img/bicycle-g9d60597de_640.jpg);  
+}
+.second-product{
+    background-image: url(./Img/bicycle-helmet-gdf11b787a_640.jpg);
+}
+.third-product{
+    background-image: url(./Img/girls-g5cf1b3c73_640.jpg);
+}
+/* contact */
+.contact{
+    text-align: center;
+}
+.contact h3{
+    margin: 20px 0px 5px;
+}
+/* footer */
+footer{
+    padding: 30px 10px;
+    text-align: center;
+    background-color: #ddd;
+}
+@media (min-width:768px) {
+    .burger-icon{
+        display: none;
+    }
+    .nav-items{
+        display: block;
+    }
+    .nav-items a{
+    padding: 0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s;
+    }
+    .nav-items a:hover{
+        color: aqua;
+    }
+    .header{
+        height: 400px;
+        background-image: url(./Img/snowy-peaks-g700ddb95f_1920.jpg);
+    }
+    .text h1{
+        font-size: 36px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+    .product h3{
+        font-size: 24px;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        display: flex;
+    }
+    .product{
+        width: 100%;
+    }
+}
+@media (min-width:1200px) {
+    .text h1{
+        font-size: 42px;
+    }
+    .text p{
+        font-size: 20px;
+    }
+}
