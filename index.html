@@ -11,13 +11,14 @@
 <body>
     <nav>
         <div class="wrapper">
-
-            <button class="burger-icon"> <i class="fa-solid fa-bars"></i> </button>
-            <div class="nav-items">
-                <a href="#">Home</a>
-                <a href="#about-us">O nas</a>
-                <a href="#products">Produkty</a>
-                <a href="#contact">Kontakt</a>
+            <button class="burger-icon" id="menu-button"> <i class="fa-solid fa-bars"></i> </button>
+            <div class="nav-items" id="menu-items">
+                <a class="link-menu" href="#">Home</a>
+                <a class="link-menu" href="#about-us">O nas</a>
+                <a class="link-menu" href="#products">Produkty</a>
+                <a class="link-menu" href="#price-list">Cennik</a>
+                <a class="link-menu" href="#routes">Trasy</a>
+                <a class="link-menu" href="#contact">Kontakt</a>
             </div>
         </div>
     </nav>
@@ -75,6 +76,15 @@
                 </div>
             </div>
         </section>
+
+        <section class="price-list wrapper" id="price-list">
+            <h2 class="section-title">Cennik</h2>
+        </section>
+        
+        <section class="routes wrapper" id="routes">
+            <h2 class="section-title">Trasy</h2>
+        </section>
+
         <section class="contact wrapper" id="contact">
             <h2 class="section-title">Kontakt</h2>
             <p><i class="fas fa-phone"></i> +48 000 000 000</p>
@@ -88,6 +98,17 @@
                 <p>
                     Zakopane 34-500
                 </p>
+            <h3>Formularz kontaktowy</h3>
+            <div class="contact-form">
+                <form action="#">
+                    <div class="contact-form-inputs">
+                        <input placeholder="Twój email" type="text">
+                        <input placeholder="Tytuł" type="text">
+                        <textarea placeholder="Wiadmomość"></textarea>
+                        <input class="contact-submit" type="submit" value="Wyslij"></input>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
@@ -95,6 +116,7 @@
             &copy; Wypożyczalnia rowerów 2023
         </p>
     </footer>
+    <script src="script.js"></script>
     
 </body>
 </html>

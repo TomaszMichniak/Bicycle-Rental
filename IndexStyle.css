@@ -48,9 +48,18 @@ nav{
     top: 0;
     height: 50px;
     line-height: 50px;
-    background-color: gray;  
+    background-color:rgb(61, 121, 158);  
     text-align: center;
     z-index: 10;
+}
+
+.menu-animation-right{
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+}
+.menu-animation-left{
+    transform: rotate(-180deg);
+    transition: all 0.5s ease;
 }
 .burger-icon{
     display: block;
@@ -61,9 +70,23 @@ nav{
     border: none;
     cursor: pointer;
     font-size: 30px;
+    color: white;
+}
+.menu-active{
+    display: block !important;
 }
 .nav-items{
     display: none;
+    background-color: rgb(67, 129, 167);
+
+}
+.nav-items a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    border-bottom: white 1px solid;
 }
 /* header */
 .header{
@@ -79,10 +102,8 @@ main{
     margin: 60px 0px;
 }
 /* products */
-.products{
-   
-    margin: 60px auto;
-   
+.products{ 
+    margin: 60px auto;  
 }
 .product{ 
     position: relative;
@@ -110,29 +131,47 @@ main{
 .contact h3{
     margin: 20px 0px 5px;
 }
+.contact-form-inputs{
+    margin: 20px;
+}
+.contact-form-inputs>*{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 5px;
+    color: #000;
+    font-size: 18px;
+    border: 1px solid black;
+   
+}
+.contact-submit{ 
+    letter-spacing: 2px;
+    color: white;
+    background-color:rgb(61, 121, 158);
+}
 /* footer */
 footer{
     padding: 30px 10px;
     text-align: center;
     background-color: #ddd;
 }
+
 @media (min-width:768px) {
     .burger-icon{
         display: none;
     }
     .nav-items{
         display: block;
+        background-color: rgb(61, 121, 158);
     }
     .nav-items a{
-    padding: 0 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    transition: color 0.3s;
+    padding: 0 20px;
+    display: inline-block;
+    transition: color 0.4s;
+    border: none;
     }
     .nav-items a:hover{
-        color: aqua;
+        color: black;
     }
     .header{
         height: 400px;
@@ -146,6 +185,10 @@ footer{
     }
     .product h3{
         font-size: 24px;
+    }
+    .contact-form-inputs{
+        margin: 0 auto;
+        width: 50%;
     }
 }
 @media (min-width:992px) {
