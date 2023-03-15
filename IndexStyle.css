@@ -83,7 +83,7 @@ nav{
     overflow: hidden;
 }
 .menu-active{
-    display: block ;
+    display: block;
     transform: translateX(0%);
 }
 
