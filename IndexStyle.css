@@ -72,14 +72,21 @@ nav{
     font-size: 30px;
     color: white;
 }
-.menu-active{
-    display: block !important;
-}
-.nav-items{
-    display: none;
-    background-color: rgb(67, 129, 167);
 
+.nav-items{
+    display: block;
+    background-color: rgb(67, 129, 167);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out ;
 }
+.menu-overflow{
+    overflow: hidden;
+}
+.menu-active{
+    display: block ;
+    transform: translateX(0%);
+}
+
 .nav-items a{
     text-transform: uppercase;
     text-decoration: none;
@@ -163,6 +170,7 @@ footer{
     .nav-items{
         display: block;
         background-color: rgb(61, 121, 158);
+        transform: none;
     }
     .nav-items a{
     padding: 0 20px;
