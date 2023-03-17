@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #D5D5D8;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -48,7 +51,7 @@ nav{
     top: 0;
     height: 50px;
     line-height: 50px;
-    background-color:rgb(61, 121, 158);  
+    background-color:#4e71ba;  
     text-align: center;
     z-index: 10;
 }
@@ -75,7 +78,7 @@ nav{
 
 .nav-items{
     display: block;
-    background-color: rgb(67, 129, 167);
+    background-color: #4867a9;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out ;
 }
@@ -131,6 +134,74 @@ main{
 .third-product{
     background-image: url(./Img/girls-g5cf1b3c73_640.jpg);
 }
+
+/* Prices */
+
+.sliderContainer{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    color: white;
+}
+.sliders{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    background-color: #4e71ba;
+    border: 1px solid black;
+    width: 33.4%;
+    transition: 0.6s;
+}
+.slide >div{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.slide >div>p{
+margin-top: 25px;
+}
+.first-profil{
+    margin-left: 0;
+}
+.second-profil{
+    margin-left: -33.4%;
+}
+.third-profil{
+    margin-left: -33.4%;
+}
+.slider-button{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 100% 25px;
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+}
+.slider-button-next{
+    left: 96%;
+}
+.slider-button-previous{
+    left: 4%;
+}
+.slider-upper-profile-divs{
+    height: 30%;
+    padding: 50px;
+    background-color: #4e71ba ;
+}
+.slider-bottom-profile-divs{
+    height: 70%;
+    padding: 50px;
+    border-top-right-radius: 15%;
+    background-color: white ;
+    color: #000;
+}
 /* contact */
 .contact{
     text-align: center;
@@ -154,7 +225,7 @@ main{
 .contact-submit{ 
     letter-spacing: 2px;
     color: white;
-    background-color:rgb(61, 121, 158);
+    background-color:#4e71ba;
 }
 /* footer */
 footer{
@@ -169,7 +240,7 @@ footer{
     }
     .nav-items{
         display: block;
-        background-color: rgb(61, 121, 158);
+        background-color: #4e71ba;
         transform: none;
     }
     .nav-items a{
@@ -198,6 +269,10 @@ footer{
         margin: 0 auto;
         width: 50%;
     }
+    .sliderContainer{
+        width: 50%;
+    }
+
 }
 @media (min-width:992px) {
     .container{
@@ -205,6 +280,10 @@ footer{
     }
     .product{
         width: 100%;
+        
+    }
+    .sliderContainer{
+        width: 30%;
     }
 }
 @media (min-width:1200px) {
@@ -214,4 +293,5 @@ footer{
     .text p{
         font-size: 20px;
     }
+    
 }

@@ -37,3 +37,29 @@ linkMenu.forEach(link => {
         setTimeout(menuOverflowClose,300);
 });
 });
+
+var slideNumber=1;
+function nextSlide(number){
+    slideNumber+=number;
+    if(slideNumber>3||slideNumber<1){
+        slideNumber-=number;
+        return;
+    }
+    var firstProfil=document.getElementById("first-profil");
+    var secondProfil=document.getElementById("second-profil");
+    var thirdProfil=document.getElementById("third-profil");
+    switch(slideNumber){
+        case 1:
+            secondProfil.classList.remove("second-profil");
+            break;
+        case 2:
+            secondProfil.classList.add("second-profil");
+            thirdProfil.classList.remove("third-profil");
+            break;
+        case 3:
+            
+            thirdProfil.classList.add("third-profil");
+
+
+    }
+}

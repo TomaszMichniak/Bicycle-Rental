@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/5b3cea0128.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
+    <nav class="menu-overflow">
         <div class="wrapper">
             <button class="burger-icon" id="menu-button"> <i class="fa-solid fa-bars"></i> </button>
             <div class="nav-items" id="menu-items">
@@ -17,7 +17,6 @@
                 <a class="link-menu" href="#about-us">O nas</a>
                 <a class="link-menu" href="#products">Produkty</a>
                 <a class="link-menu" href="#price-list">Cennik</a>
-                <a class="link-menu" href="#routes">Trasy</a>
                 <a class="link-menu" href="#contact">Kontakt</a>
             </div>
         </div>
@@ -79,10 +78,56 @@
 
         <section class="price-list wrapper" id="price-list">
             <h2 class="section-title">Cennik</h2>
-        </section>
-        
-        <section class="routes wrapper" id="routes">
-            <h2 class="section-title">Trasy</h2>
+            <div class="sliderContainer">
+                <button class="slider-button slider-button-previous" onclick="nextSlide(-1)" value="">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="slider-button slider-button-next" onclick="nextSlide(1)">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <div class="sliders">
+                    <div id="first-profil" class="slide first-profil">
+                        <div>
+                            <div class="slider-upper-profile-divs">
+                                <h3> 24H</h3>
+                            </div>
+                            <div class="slider-bottom-profile-divs">
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="second-profil" class="slide">
+                        <div>
+                            <div class="slider-upper-profile-divs">
+                                <h3> 2 Dni</h3>
+                            </div>
+                            <div class="slider-bottom-profile-divs">
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>                        </div>
+                    </div>
+                    <div id="third-profil" class="slide">
+                        
+                        <div>
+                            <div class="slider-upper-profile-divs">
+                                <h3> Tydzień</h3>
+                            </div>
+                            <div class="slider-bottom-profile-divs">
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
 
         <section class="contact wrapper" id="contact">
