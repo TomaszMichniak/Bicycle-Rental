@@ -180,17 +180,17 @@ margin-top: 25px;
     position: absolute;
     top: 50%;
     transform: translate(-50%,-50%);
-    padding: 100% 25px;
+    padding: 40% 25px;
     cursor: pointer;
     font-size: 30px;
     border: none;
     background-color: transparent;
 }
 .slider-button-next{
-    left: 96%;
+    left: 90%;
 }
 .slider-button-previous{
-    left: 4%;
+    left: 10%;
 }
 .slider-upper-profile-divs{
     height: 30%;
