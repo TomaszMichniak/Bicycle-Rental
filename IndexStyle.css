@@ -136,7 +136,9 @@ main{
 }
 
 /* Prices */
-
+.price-list{
+    margin: 60px 0px;
+}
 .sliderContainer{
     position: relative;
     margin: 0 auto;
