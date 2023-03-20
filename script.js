@@ -45,7 +45,6 @@ function nextSlide(number){
         slideNumber-=number;
         return;
     }
-    var firstProfil=document.getElementById("first-profil");
     var secondProfil=document.getElementById("second-profil");
     var thirdProfil=document.getElementById("third-profil");
     switch(slideNumber){
