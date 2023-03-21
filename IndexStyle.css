@@ -4,7 +4,8 @@
     padding: 0;
 }
 body{
-    background-color: #D5D5D8;
+    background-color: #2a2b2f;
+    color: #fff;
 }
 html{
     scroll-behavior: smooth;
@@ -111,7 +112,7 @@ nav{
 /* main */
 
 main{
-    margin: 60px 0px;
+    margin-top:60px;
 }
 /* products */
 .products{ 
@@ -203,17 +204,21 @@ margin-top: 25px;
 }
 .slider-bottom-profile-divs{
     height: 70%;
-    padding: 50px;
-    /* border-top-left-radius: 15%; */
+    padding: 60px 90px;
     background-color: white ;
     color: #000;
 }
 /* contact */
 .contact{
     text-align: center;
+    background-color: #4e71ba;
+    padding: 60px 0px;
 }
 .contact h3{
     margin: 20px 0px 5px;
+}
+.contact-form{
+    margin-top:25px;
 }
 .contact-form-inputs{
     margin: 20px;
@@ -228,19 +233,23 @@ margin-top: 25px;
     border: 1px solid black;
    
 }
-.contact-form-inputs>textarea{
+.contact-form-inputs textarea{
     resize: vertical;
 }
 .contact-submit{ 
     letter-spacing: 2px;
     color: white;
-    background-color:#4e71ba;
+    background-color:#2b4580;
+    transition: all 0.3s ease-in-out;
+}
+.contact-submit:hover{
+    background-color:#3c5b9c ;
+    border-color: white;
 }
 /* footer */
 footer{
     padding: 30px 10px;
     text-align: center;
-    background-color: #ddd;
 }
 
 @media (min-width:768px) {
@@ -282,7 +291,7 @@ footer{
         width: 50%;
     }
     .slider-bottom-profile-divs{
-        padding: 60px;
+        padding: 60px 120px;
     }
 }
 @media (min-width:992px) {
@@ -294,7 +303,7 @@ footer{
         
     }
     .sliderContainer{
-        width: 30%;
+        width: 45%;
     }
 }
 @media (min-width:1200px) {
