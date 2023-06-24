@@ -105,7 +105,7 @@ nav{
 .header{
     position: relative;
     height: 330px;
-    background-image: url(./Img/snowy-peaks-g2b4623f6d_640.jpg);
+    background-image: url(./Img/DSC_4225_640.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -272,7 +272,7 @@ footer{
     }
     .header{
         height: 400px;
-        background-image: url(./Img/snowy-peaks-g700ddb95f_1920.jpg);
+        background-image: url(./Img/DSC_4225_1920.jpg);
     }
     .text h1{
         font-size: 36px;
